@@ -1,4 +1,5 @@
 import React, { Component } from 'react';
+import PropTypes from 'prop-types';
 
 class Formulario extends Component {
     //leer datos del formulario
@@ -62,6 +63,10 @@ class Formulario extends Component {
             </div>
         );
     }
+}
+
+Formulario.propTypes = {
+    datosConsulta: PropTypes.func.isRequired
 }
 
 export default Formulario;
